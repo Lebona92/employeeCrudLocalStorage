@@ -33,6 +33,7 @@ import { Student2Component } from './components/student2/student2.component';
 import { MyhttpInterceptor } from './services/interceptor/myhttp.interceptor';
 import { HightlightDirective } from './directives/hightlight.directive';
 import { OnScrollDirective } from './directives/on-scroll.directive';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -69,7 +70,8 @@ import { OnScrollDirective } from './directives/on-scroll.directive';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS, useClass: CustomInterceptor,
